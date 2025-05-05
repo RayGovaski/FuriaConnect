@@ -29,9 +29,8 @@ A proposta do sistema é oferecer uma experiência social personalizada para fã
 ## ▶️ Como Rodar o Projeto
 
 1. Clone este repositório em sua máquina local.  
-2. Instale as dependências com `npm install` nas pastas de front-end e back-end.  
-3. Configure as variáveis de ambiente do Firebase no arquivo `.env`.  
-4. Execute o front-end e o back-end com `npm start`.  
+2. Instale as dependências com `npm install` nas pasta principal.  
+4. Execute o front-end com `npm run dev`.  
 5. Acesse a aplicação via navegador para explorar todas as funcionalidades.
 
 ---
