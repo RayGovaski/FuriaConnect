@@ -1,0 +1,88 @@
+/* Sidebar.css */
+.sidebar-container {
+  background-color: #3c4145;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.sidebar-header h4 {
+  margin: 0;
+}
+
+.sidebar-section-header {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #343a40;
+}
+
+.section-icon {
+  margin-right: 10px;
+}
+
+.sidebar-section-header h5 {
+  margin: 0;
+}
+
+.sidebar-list {
+  margin-bottom: 0;
+}
+
+.sidebar-item {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  transition: background-color 0.2s;
+}
+
+.sidebar-item:hover {
+  background-color: #535353 !important;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #212529;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding: 12px 15px;
+  background-color: #212529;
+}
+
+.online-status {
+  display: flex;
+  align-items: center;
+}
+
+.list-group-item {
+  background-color: #6b6d70 !important;
+  color: #fff;
+
+}
+.list-group-item-action {
+  color: #fff !important;
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #535353 !important; 
+  border-color: #373737 !important; 
+}

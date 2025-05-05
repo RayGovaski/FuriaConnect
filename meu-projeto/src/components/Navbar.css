@@ -1,0 +1,54 @@
+.main-navbar {
+  padding: 8px 0;
+}
+
+.navbar-brand {
+  font-weight: 500;
+}
+
+.navbar-logo {
+  width: 100px;
+  height: 60px;
+  background-image: url("/src/assets/Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.furia-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.navbar-controls {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.auth-button {
+  font-size: 0.875rem;
+}
+
+.username-text {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.row>* {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}

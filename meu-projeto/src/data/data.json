@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "id": "1746407963383",
+      "username": "gui",
+      "email": "gui@gmail.com",
+      "password": "teste123",
+      "games": [
+        "CS2",
+        "Valorant"
+      ],
+      "gameRoles": [
+        "AWP"
+      ],
+      "gameStyle": "Competitivo",
+      "favoriteStreamer": "Gaules",
+      "favoriteFuriaPlayer": "KSCERATO",
+      "inspiringPlayer": "S1mple",
+      "SteamId": "meuid",
+      "personalityTags": [
+        "Tático",
+        "Carregador"
+      ],
+      "gameObjectives": [
+        "Subir pro global"
+      ],
+      "instagram": "@meu_usuario",
+      "twitter": "@meu_usuario",
+      "facebook": "seu.usuario",
+      "linkedin": "meu-usuario",
+      "discord": "meuusuario",
+      "avatar": null,
+      "memberSince": "04/05/2025"
+    },
+    {
+      "id": "1746409856098",
+      "username": "ray",
+      "email": "rayy@gmail.com",
+      "password": "123123",
+      "games": [
+        "Roblox"
+      ],
+      "gameRoles": [
+        "AWP"
+      ],
+      "gameStyle": "Competitivo",
+      "favoriteStreamer": "Gaules",
+      "favoriteFuriaPlayer": "KSCERATO",
+      "inspiringPlayer": "S1mple",
+      "SteamId": "123123",
+      "personalityTags": [
+        "Tatico"
+      ],
+      "gameObjectives": [
+        "Subir de rank"
+      ],
+      "instagram": "@rayy",
+      "twitter": "@rayyyyyyyy",
+      "facebook": "rayy.rayyy",
+      "linkedin": "rayy---yyaar",
+      "discord": "rayy123",
+      "avatar": null,
+      "memberSince": "04/05/2025"
+    },
+    {
+      "id": "1746413070961",
+      "username": "chris",
+      "email": "chris@gmail.com",
+      "password": "123123",
+      "games": [
+        "CSS"
+      ],
+      "gameRoles": [
+        "AWP"
+      ],
+      "gameStyle": "Competitivo",
+      "favoriteStreamer": "GAULES",
+      "favoriteFuriaPlayer": "KS",
+      "inspiringPlayer": "S1PLE",
+      "SteamId": "123123",
+      "personalityTags": [
+        "TATICO",
+        "PIPIPI"
+      ],
+      "gameObjectives": [
+        "SUBIR RANK"
+      ],
+      "instagram": "@CHRIS",
+      "twitter": "@CHRIS",
+      "facebook": "@CHRIS",
+      "linkedin": "@CHRIS",
+      "discord": "CHRIS#123",
+      "avatar": null,
+      "memberSince": "04/05/2025"
+    }
+  ]
+}

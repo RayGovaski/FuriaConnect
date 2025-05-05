@@ -1,0 +1,71 @@
+/* ChatPage.css */
+.chat-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hamburger-container {
+  background-color: #212529;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content {
+  flex: 1;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.content-row {
+  height: 100%;
+  --bs-gutter-x: 0;
+}
+
+.sidebar-column {
+  height: 100%;
+  padding: 0;
+  z-index: 1030;
+}
+
+.chat-column {
+  height: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1025;
+}
+
+/* Estilos específicos para mobile */
+@media (max-width: 767.98px) {
+  .sidebar-mobile-hidden {
+    display: none !important;
+  }
+  
+  .sidebar-mobile-visible {
+    display: block !important;
+    position: absolute;
+    width: 80%;
+    max-width: 300px;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+}
