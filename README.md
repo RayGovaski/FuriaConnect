@@ -22,7 +22,6 @@ A proposta do sistema é oferecer uma experiência social personalizada para fã
 
 - **React** – Biblioteca JavaScript para construção da interface do usuário  
 - **Node.js** – Back-end da aplicação, responsável pelas regras de negócio e integrações  
-- **Firebase** – Autenticação de usuários e banco de dados em tempo real  
 - **Bootstrap** – Framework CSS para estilização responsiva e componentes visuais  
 
 ---
