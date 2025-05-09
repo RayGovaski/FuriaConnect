@@ -59,6 +59,21 @@
   margin-right: 10px;
   color: #fff;
 }
+.contact-avatar img {
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+}
+.contact-avatar img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block !important; /* Remove espaços extras que podem surgir */
+  border: none !important; /* Garante que não tenha borda */
+  background-color: transparent !important; /* Caso o avatar não carregue, sem fundo */
+}
+
 
 .sidebar-footer {
   margin-top: auto;

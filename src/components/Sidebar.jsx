@@ -15,13 +15,9 @@ const Sidebar = () => {
   useEffect(() => {
     (async () => {
       const json = await fetch("http://localhost:3001/users");
-      const users = await json.json();
+      const users = await json.json();     
 
-      const usersUsername = users.map(user => {
-        return user.username;
-      })
-
-      setContatos(usersUsername);
+      setContatos(users);
     })();
   }, [])
 
@@ -78,14 +74,14 @@ const Sidebar = () => {
           <ListGroup.Item 
             key={idx} 
             action 
-            className={`sidebar-item ${activeChat === contato ? 'active' : ''}`}
-            onClick={() => handleChatSelect(contato)}
+            className={`sidebar-item ${activeChat === contato.name ? 'active' : ''}`}
+            onClick={() => handleChatSelect(contato.name)}
           >
             <div className="contact-item">
               <div className="contact-avatar">
-                <span>{contato.charAt(0)}</span>
+                <img src={contato.avatar} alt="" />
               </div>
-              {contato}
+              {contato.username}
             </div>
           </ListGroup.Item>
         ))}

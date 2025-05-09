@@ -14,36 +14,34 @@ const Profile = () => {
   // Mock profile data
   const [profileData, setProfileData] = useState(
     {
-      "id": "1746407963383",
-      "username": "gui",
-      "email": "gui@gmail.com",
-      "password": "teste123",
+      "id": "",
+      "username": "",
+      "email": "",
+      "password": "",
       "games": [
-        "CS2",
-        "Valorant"
+        ""
       ],
       "gameRoles": [
-        "AWP"
+        ""
       ],
-      "gameStyle": "Competitivo",
-      "favoriteStreamer": "Gaules",
-      "favoriteFuriaPlayer": "KSCERATO",
-      "inspiringPlayer": "S1mple",
-      "SteamId": "meuid",
+      "gameStyle": "",
+      "favoriteStreamer": "",
+      "favoriteFuriaPlayer": "",
+      "inspiringPlayer": "",
+      "SteamId": "",
       "personalityTags": [
-        "Tático",
-        "Carregador"
+        "",        
       ],
       "gameObjectives": [
-        "Subir pro global"
+        ""
       ],
-      "instagram": "@meu_usuario",
-      "twitter": "@meu_usuario",
-      "facebook": "seu.usuario",
-      "linkedin": "meu-usuario",
-      "discord": "meuusuario",
-      "avatar": null,
-      "memberSince": "04/05/2025"
+      "instagram": "",
+      "twitter": "",
+      "facebook": "",
+      "linkedin": "",
+      "discord": "",
+      "avatar": "",
+      "memberSince": ""
     }
   );
 
@@ -59,11 +57,11 @@ const Profile = () => {
       const users = await json.json();
       
       const userJson = localStorage.getItem("@user");
-      const user = JSON.parse(userJson);
+      const userParsed = JSON.parse(userJson);
 
-      const test = users.find(u => u.email == user.email);
+      const user = users.find(u => u.email == userParsed.email);
 
-      setProfileData(test);
+      setProfileData(user);
     })();
   }, [])
 
@@ -147,11 +145,17 @@ const Profile = () => {
   // Handle photo upload
   const handlePhotoChange = (e) => {
     if (e.target.files && e.target.files[0]) {
-      const file = e.target.files[0];
+      const file = e.target.files[0];            
+      
       const reader = new FileReader();
       
       reader.onloadend = () => {
+        console.log(reader)
         setImagePreview(reader.result);
+        setProfileData({
+          ...profileData,
+          avatar: reader.result
+        });
       };
       
       reader.readAsDataURL(file);
@@ -165,11 +169,20 @@ const Profile = () => {
   };
 
   // Save photo changes
-  const handleSavePhoto = () => {
+  const handleSavePhoto = async () => {
     setProfileData({
       ...profileData,
       avatar: imagePreview
     });
+
+    await fetch(`http://localhost:3001/users/${profileData.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(profileData)
+    });
+
     setShowPhotoModal(false);
   };
 
