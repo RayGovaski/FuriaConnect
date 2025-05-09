@@ -30,9 +30,10 @@ A proposta do sistema é oferecer uma experiência social personalizada para fã
 
 1. Clone este repositório em sua máquina local.  
 2. Instale as dependências com `npm install` nas pasta principal.  
-4. Execute o front-end com `npm run dev`.  
-5. Acesse a aplicação via navegador para explorar todas as funcionalidades.
-
+4. Execute o front-end com `npm run dev`.
+5. Execute o back-end com `npx json-server -p 3001 src/data/data.json`.
+6. Acesse a aplicação via navegador para explorar todas as funcionalidades.
+7. 
 ---
 
 ## 👤 Desenvolvedor
